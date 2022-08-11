@@ -367,6 +367,7 @@ function findExportMetadata(importPath: string): ExportMetadata | undefined {
 
 interface EmulatorOptions extends Options {
   extDevEnv?: Record<string, string>;
+  singleProjectMode?: Boolean;
 }
 
 /**
