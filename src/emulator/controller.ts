@@ -366,9 +366,7 @@ function findExportMetadata(importPath: string): ExportMetadata | undefined {
 }
 
 interface EmulatorOptions extends Options {
-  // FIXME who converts this from the config then?
   extDevEnv?: Record<string, string>;
-  singleProjectMode?: boolean;
 }
 
 /**
