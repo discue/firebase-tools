@@ -1,2 +1,1 @@
-- Add the "experiments" family of commands (#4994)
-- Enable detecting and skipping no-op function deploys (#5032).
+- Fix Storage Emulator crashing with NoClassDefFoundError in some cases (#3481).
