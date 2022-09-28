@@ -1,1 +1,2 @@
 - Added support for publishing pre-release Extension versions. (#4804)
+- Added a config for singleProjectMode and pass the value to the firestore emulator on startup.
