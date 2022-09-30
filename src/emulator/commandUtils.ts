@@ -72,6 +72,9 @@ const DEFAULT_CONFIG = new Config(
   {}
 );
 
+/**
+ *
+ */
 export function printNoticeIfEmulated(
   options: any,
   emulator: Emulators.DATABASE | Emulators.FIRESTORE
@@ -95,6 +98,9 @@ export function printNoticeIfEmulated(
   }
 }
 
+/**
+ *
+ */
 export function warnEmulatorNotSupported(
   options: any,
   emulator: Emulators.DATABASE | Emulators.FIRESTORE
@@ -132,6 +138,9 @@ export function warnEmulatorNotSupported(
   }
 }
 
+/**
+ *
+ */
 export async function beforeEmulatorCommand(options: any): Promise<any> {
   const optionsWithDefaultConfig = {
     ...options,
@@ -167,6 +176,9 @@ export async function beforeEmulatorCommand(options: any): Promise<any> {
   }
 }
 
+/**
+ *
+ */
 export function parseInspectionPort(options: any): number {
   let port = options.inspectFunctions;
   if (port === true) {
