@@ -21,7 +21,7 @@ export interface FirestoreEmulatorArgs {
   auto_download?: boolean;
   seed_from_export?: string;
   single_project_mode?: boolean;
-  single_project_mode_error?: boolean;
+  single_project_mode_error?: boolean; // FIXME debug report missing project ID
 }
 
 export class FirestoreEmulator implements EmulatorInstance {
