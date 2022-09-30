@@ -618,6 +618,7 @@ export async function startAll(
       );
     }
 
+    // undefined in the config defaults to setting single_project_mode.
     if (options.config.src.emulators?.singleProjectMode === undefined
       || options.config.src.emulators?.singleProjectMode) {
       if (projectId) {
