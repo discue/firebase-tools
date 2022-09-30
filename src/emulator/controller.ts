@@ -563,7 +563,7 @@ export async function startAll(
     const args: FirestoreEmulatorArgs = {
       host: firestoreAddr.host,
       port: firestoreAddr.port,
-      projectId,
+      project_id: projectId,
       auto_download: true,
     };
 
@@ -618,7 +618,8 @@ export async function startAll(
       );
     }
 
-    if (options.config.src.emulators?.singleProjectMode) {
+    if (options.config.src.emulators?.singleProjectMode === undefined
+      || options.config.src.emulators?.singleProjectMode) {
       if (projectId) {
         args.single_project_mode = true;
         args.single_project_mode_error = false;
