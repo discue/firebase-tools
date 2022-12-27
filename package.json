@@ -24,7 +24,7 @@
     "lint:ts": "eslint --config .eslintrc.js --ext .ts,.js .",
     "mocha": "nyc mocha 'src/test/**/*.{ts,js}'",
     "prepare": "npm run clean && npm run build:publish",
-    "test": "npm run lint:quiet && npm run test:compile && npm run mocha",
+    "postinstall": "tsc --build tsconfig.publish.json",
     "test:client-integration": "bash ./scripts/client-integration-tests/run.sh",
     "test:compile": "tsc --project tsconfig.compile.json",
     "test:emulator": "bash ./scripts/emulator-tests/run.sh",
