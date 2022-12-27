@@ -5,4 +5,6 @@ set -e
 git checkout next
 git fetch origin master
 git rebase origin/master
-npx tsc --build tsconfig.publish.json 
+git push spf next -f
+npm run build:publish
+npm publish --access=public
